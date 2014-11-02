@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>02. Problem</title>
+    <link href="02. FlightOrder.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form>
+        <h1>Flight order</h1>
+        <div>
+            <label for="from">From</label>
+            <select id="from">
+                <option>enter a city</option>
+                <option>Sofia</option>
+                <option>Dimitrovgrad</option>
+            </select>
+            <label for="departure">Departure Date</label>
+            <input id="departure" type="date" value="2014-06-09" />
+            <label for=" return">Return Date</label>
+            <input id="return" type="date" value="2014-06-13" />
+            <label class="third" for="first">12+</label>
+            <label class="third" for="second">2-12</label>
+            <label class="third" for="third">0-2</label>
+            <input id="first" type="number" class="third" value="0" />
+            <input id="second" type="number" class="third" value="0" />
+            <input id="third" type="number" class="third" value="0" />
+        </div>
+        <div>
+            <label for="to">To</label>
+            <select id="to">
+                <option>enter a city</option>
+                <option>Sofia</option>
+                <option>Dimitrovgrad</option>
+            </select>
+            <input id="direct" type="checkbox" />
+            <label for="direct" class="inline-label">Prefer directs</label>
+            <label for="time-interval">Time Interval</label>
+            <input id="time-interval" type="time" class="half" />
+            <input type="time" class="half" />
+            <label for="time-interval2">Time Interval</label>
+            <input id="time-interval2" type="time" class="half" />
+            <input type="time" class="half" />
+            <label for="class">Choose class</label>
+            <select id="class">
+                <option>Economy</option>
+                <option>Business</option>
+                <option>First</option>
+            </select>
+            <input type="submit" value="Search" />
+        </div>
+    </form>
+</body>
+</html>

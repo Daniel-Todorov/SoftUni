@@ -1,0 +1,72 @@
+﻿body,
+div {
+  margin: 0;
+  padding: 0;
+}
+div {
+  position: absolute;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+#face {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 50px;
+  background-color: yellow;
+}
+#face .eye {
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+#face .eye div {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+#face .eye#left {
+  left: 100px;
+}
+#face .eye#left div {
+  left: 56px;
+  top: 56px;
+}
+#face .eye#right {
+  left: 300px;
+}
+#face .eye#right div {
+  left: 2px;
+  top: 2px;
+}
+#face #nose {
+  top: 208.33333333px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  vertical-align: central;
+  width: 83.33333333px;
+  height: 83.33333333px;
+  background-color: red;
+}
+#face #mouth {
+  top: 320px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 250px;
+  height: 100px;
+  border-radius: 50px;
+  text-align: center;
+  background-color: white;
+}
+#face #mouth div {
+  position: static;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-top: 0 solid black;
+  border-radius: 0 0 10px 10px;
+}
+/*# sourceMappingURL=03. SoftUniStudentBeforeExam.css.map */

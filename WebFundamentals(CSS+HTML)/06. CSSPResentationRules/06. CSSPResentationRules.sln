@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. TheJauntyTextField", "01. TheJauntyTextField", "{92915211-731D-427B-BA3F-154EDE821007}"
+	ProjectSection(SolutionItems) = preProject
+		01. TheJauntyTextField.css = 01. TheJauntyTextField.css
+		01. TheJauntyTextField.html = 01. TheJauntyTextField.html
+		01. TheJauntyTextField.less = 01. TheJauntyTextField.less
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. SoftUniHawaiiVacation", "02. SoftUniHawaiiVacation", "{84D5269D-8481-4B30-A443-94B4E40063D3}"
+	ProjectSection(SolutionItems) = preProject
+		02. SoftUniHawaiiVacation.css = 02. SoftUniHawaiiVacation.css
+		02. SoftUniHawaiiVacation.html = 02. SoftUniHawaiiVacation.html
+		02. SoftUniHawaiiVacation.less = 02. SoftUniHawaiiVacation.less
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. StylingHTMLForm", "03. StylingHTMLForm", "{CA8A8829-6255-4C82-91F2-28DE76EAB30E}"
+	ProjectSection(SolutionItems) = preProject
+		03. StylingHTMLForm.css = 03. StylingHTMLForm.css
+		03. StylingHTMLForm.html = 03. StylingHTMLForm.html
+		03. StylingHTMLForm.less = 03. StylingHTMLForm.less
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. NestedDivElements", "04. NestedDivElements", "{1B83CA61-C7D1-4E87-82EB-8C3F8454ADA1}"
+	ProjectSection(SolutionItems) = preProject
+		04. NestedDivElements.css = 04. NestedDivElements.css
+		04. NestedDivElements.html = 04. NestedDivElements.html
+		04. NestedDivElements.less = 04. NestedDivElements.less
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

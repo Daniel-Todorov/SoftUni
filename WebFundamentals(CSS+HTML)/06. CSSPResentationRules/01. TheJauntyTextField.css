@@ -1,0 +1,79 @@
+﻿body,
+section,
+h1,
+h2,
+span {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+}
+#wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+  padding: 0 0 30px;
+  text-align: center;
+  border-top: 5px dotted #ffff00;
+  border-right: 10px solid #008000;
+  border-bottom: 5px double #0000ff;
+  border-left: 5px dashed #ff0000;
+}
+#wrapper h1 {
+  display: inline-block;
+  margin: 15px 20px 28px;
+  font-size: 32px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: 10px 10px 8px #bcbcbc;
+}
+#wrapper section {
+  margin: 0 25px;
+  padding: 0 55px 10px;
+  border-radius: 50px;
+  box-shadow: 0 0 0 2px #ff0000, 0 0 0 4px #ffff00, 0 0 0 6px #008000, 0 0 0 8px #0000ff;
+}
+#wrapper section h2 {
+  display: block;
+  padding: 10px 0 15px;
+  font-size: 15px;
+  font-weight: normal;
+  text-shadow: 10px 10px 7px #bcbcbc;
+}
+#wrapper section span {
+  display: inline-block;
+  padding: 0 12px;
+  background-color: #d8921a;
+  font-size: 13px;
+  border: 2px outset #ffa500;
+}
+#wrapper .bubble {
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(157, 157, 157, 0.8);
+  border: 2px dashed white;
+  border-radius: 25px;
+  box-shadow: 0 0 0 4px rgba(157, 157, 157, 0.8);
+}
+#wrapper .first {
+  left: 407px;
+  bottom: 62px;
+  width: 13px;
+  height: 10px;
+}
+#wrapper .second {
+  width: 22px;
+  height: 22px;
+  right: 50px;
+  bottom: 80px;
+}
+#wrapper .third {
+  right: -60px;
+  bottom: 105px;
+  width: 95px;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=01. TheJauntyTextField.css.map */

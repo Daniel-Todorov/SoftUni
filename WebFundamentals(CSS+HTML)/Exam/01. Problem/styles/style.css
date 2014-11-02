@@ -1,0 +1,65 @@
+﻿body,
+div,
+header,
+section,
+figure,
+h1,
+h2,
+figcaption,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+}
+#wrapper {
+  margin: 10px;
+  border: 1px dotted #d6d6d6;
+}
+#wrapper header h1 {
+  margin: 5px;
+  padding: 10px 5px;
+  border: 1px dotted #cccccc;
+  background-color: #e9f5fe;
+  color: #125675;
+  font-size: 23px;
+}
+#wrapper section {
+  margin: 20px 5px;
+}
+#wrapper section h2 {
+  color: #2abbf5;
+  font-size: 15px;
+}
+#wrapper section ul {
+  margin: 10px 30px 25px;
+  list-style-type: none;
+}
+#wrapper section ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+#wrapper section ul li figure {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+#wrapper section ul li figure:hover {
+  background-color: #d0e0ec;
+  cursor: pointer;
+}
+#wrapper section ul li figure img {
+  display: inline-block;
+  margin: 0 0 5px;
+}
+#wrapper section ul li figure figcaption {
+  color: #0d62c8;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

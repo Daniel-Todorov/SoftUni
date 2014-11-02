@@ -1,0 +1,54 @@
+﻿form {
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+
+    fieldset {
+        display: inline-block;
+        vertical-align: middle;
+        border: none;
+
+        label {
+            display: block;
+            text-align: center;
+        }
+
+        span {
+            &:nth-of-type(2n + 1) {
+                float: left;
+            }
+
+            &:nth-of-type(2n) {
+                float: right;
+            }
+        }
+
+        input {
+            display: block;
+            width: 100%;
+        }
+
+        &:nth-of-type(2) {
+            background-color: aliceblue;
+        }
+    }
+
+    button {
+        border: 2px solid aqua;
+        border-radius: 10px;
+        background: none;
+
+        div {
+            text-align: left;
+
+            &:last-of-type {
+                text-align: right;
+
+                span {
+                    padding: 5px;
+                    background-color: blue;
+                    border-top-left-radius: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+﻿form {
+  display: inline-block;
+  padding: 15px;
+  text-align: center;
+  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  background-color: pink;
+}
+form div {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+  text-align: left;
+}
+form h1 {
+  font-size: 1.5em;
+}
+form label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 0.75em;
+  color: gray;
+}
+form input,
+form select {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+form input[type=checkbox] {
+  display: inline-block;
+  width: 15px;
+}
+form input[type=submit] {
+  padding: 5px;
+  font-weight: bold;
+}
+form .third {
+  width: 29%;
+  border: none;
+}
+form .half {
+  width: 48%;
+}
+form .inline-label {
+  display: inline-block;
+  width: 80%;
+}
+/*# sourceMappingURL=02. FlightOrder.css.map */

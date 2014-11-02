@@ -1,0 +1,15 @@
+﻿body,
+div {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 40px;
+}
+body div {
+  background: orange;
+  border-radius: 1000px;
+  border: 2px solid blue;
+  padding-right: 4.5%;
+}
+/*# sourceMappingURL=04. NestedDivElements.css.map */

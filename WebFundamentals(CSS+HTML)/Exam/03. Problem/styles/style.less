@@ -1,0 +1,152 @@
+﻿body, section, div, tr, td, table, tbody, article, p, input, label, fieldset, legend, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+#wrapper {
+    margin: 0 75px;
+
+    > h1 {
+        margin: 20px 0 25px;
+        color: #333333;
+        font-weight: normal;
+        font-size: 26px;
+    }
+
+    > form {
+        display: inline-block;
+        vertical-align: top;
+
+        fieldset {
+            border: 1px dashed #cccccc;
+
+            legend {
+                margin: 12px;
+                padding: 7px 5px;
+                border: 1px solid #333333;
+                background-color: #666666;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+        table {
+            margin: 0 10px 10px;
+            border-collapse:separate;
+
+            td {
+                width: 350px;
+                height: 40px;
+                border-bottom: 1px solid #f7f7f7;;
+                background-color: #e6e6e6;
+
+                &:first-of-type {
+                    width: 145px;
+                    padding: 0 7px;
+                    background-color: #cccccc;
+                    border-right: 4px solid #f7f7f7;
+                    color: #666666;
+                    font-size: 18px;
+
+                    &.empty {
+                        background-color: #f7f7f7;
+                    }
+                }
+
+                &:last-of-type {
+                    vertical-align: bottom;
+                }
+
+                &.submit {
+                    text-align: right;
+                    border: 1px solid #cccccc;
+                    background-color: #ffffff;
+
+                    input {
+                        display: inline-block;
+                        width: auto;
+                        margin-right: 35px;
+                        padding: 5px 15px;
+                        border: 2px outset #ffffff;
+                        background-color: #e3e3db;
+                        color: #989070;
+                        font-size: 12px;
+                        font-weight: bold;
+
+                        &:hover{
+                            background-color: #cccccc;
+                            color: #555555;
+                        }
+                    }
+                }
+
+                label{
+                    display: block;
+                }
+
+                input {
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    width: 310px;
+                    margin: 4px;
+                    padding: 3px 20px;
+                    border: 2px inset #eeeeee;
+                    font-size: 18px;
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    color: #555555;
+
+                    &:focus, &:hover{
+                        background-color: #f7f5d2;
+                    }
+
+                    &#username {
+                        background-image: url(../images/username-icon.png);
+                    }
+
+                    &#password {
+                        background-image: url(../images/password-icon.png);
+                    }
+
+                    &#name, &#address, &#city, &#country {
+                        background-image: url(../images/field-icon.png);
+                    }
+                }
+            }
+        }
+
+        hr{
+            margin: 20px 0;
+            border-top: 1px dashed #cccccc;
+        }
+    }
+
+    > article {
+        display: inline-block;
+        width: 190px;
+        margin: 15px 0 0 10px;
+        padding: 20px 15px 0;
+        border: 1px solid #cccccc;
+        background-color: #ffffff;
+
+        h2{
+            margin-bottom: 20px;
+            color: #333333;
+            font-weight: normal;
+            font-size: 20px;
+        }
+
+        p{
+            margin-bottom: 15px;
+            color: #666666;
+            font-size: 12px;
+        }
+    }
+}

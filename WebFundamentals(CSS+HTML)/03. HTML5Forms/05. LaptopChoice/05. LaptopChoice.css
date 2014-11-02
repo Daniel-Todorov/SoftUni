@@ -1,0 +1,43 @@
+﻿form {
+  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+}
+form fieldset {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+}
+form fieldset label {
+  display: block;
+  text-align: center;
+}
+form fieldset span:nth-of-type(2n + 1) {
+  float: left;
+}
+form fieldset span:nth-of-type(2n) {
+  float: right;
+}
+form fieldset input {
+  display: block;
+  width: 100%;
+}
+form fieldset:nth-of-type(2) {
+  background-color: aliceblue;
+}
+form button {
+  border: 2px solid aqua;
+  border-radius: 10px;
+  background: none;
+}
+form button div {
+  text-align: left;
+}
+form button div:last-of-type {
+  text-align: right;
+}
+form button div:last-of-type span {
+  padding: 5px;
+  background-color: blue;
+  border-top-left-radius: 10px;
+  color: white;
+}
+/*# sourceMappingURL=05. LaptopChoice.css.map */

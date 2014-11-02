@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AFC8EC50-226A-429F-9D10-AFDDE234E9F7}"
+	ProjectSection(SolutionItems) = preProject
+		01. SimpleTable.html = 01. SimpleTable.html
+		02. ExamResults.html = 02. ExamResults.html
+		03. NestedTables.html = 03. NestedTables.html
+		04. WebsiteHeader.html = 04. WebsiteHeader.html
+		05. LifeInSoftUni.html = 05. LifeInSoftUni.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

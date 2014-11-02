@@ -1,0 +1,180 @@
+﻿@font-face {
+  font-family: 'Patua One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Patua One'), local('PatuaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/patuaone/v4/yAXhog6uK3bd3OwBILv_SD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+body,
+header,
+section,
+footer,
+aside,
+div,
+img,
+article,
+p,
+ul,
+li,
+form,
+input,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+#wrapper header {
+  width: 564px;
+  margin: 20px auto;
+  text-align: center;
+}
+#wrapper header a img {
+  display: inline-block;
+  width: 40px;
+  vertical-align: middle;
+}
+#wrapper header a h1 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #444444;
+  font-family: 'Patua One', serif;
+  font-size: 45px;
+}
+#wrapper header a h1:hover {
+  color: #777777;
+}
+#wrapper header a P {
+  color: #666666;
+  font-style: italic;
+  font-size: 12px;
+}
+#wrapper header nav ul {
+  margin: 20px auto 30px;
+  border-top: 1px dashed #aaaaaa;
+  border-bottom: 1px dashed #aaaaaa;
+}
+#wrapper header nav ul li {
+  display: inline-block;
+  padding: 6px 2px;
+}
+#wrapper header nav ul li a {
+  display: block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  color: #999999;
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+#wrapper header nav ul li a:hover {
+  color: #666666;
+}
+#wrapper header nav ul li a.active {
+  background-color: #eeeeee;
+}
+#wrapper img.featured-background {
+  display: block;
+  width: 100%;
+}
+#wrapper > section {
+  display: inline-block;
+  width: 730px;
+}
+#wrapper > section article {
+  margin: 30px auto 40px;
+}
+#wrapper > section article h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: normal;
+}
+#wrapper > section article p {
+  box-sizing: border-box;
+  padding-right: 10px;
+  color: #333333;
+  font-size: 15px;
+}
+#wrapper > section article:first-of-type {
+  box-sizing: border-box;
+  width: 600px;
+  margin: 30px auto 40px;
+  padding: 20px 0 30px;
+  border-top: 1px dashed #aaaaaa;
+  border-bottom: 1px dashed #aaaaaa;
+  text-align: center;
+}
+#wrapper > section article:first-of-type h2 {
+  margin-bottom: 10px;
+  color: #666666;
+  font-size: 16px;
+}
+#wrapper > section article:first-of-type p {
+  padding: 0 30px;
+  color: #666666;
+  font-size: 12px;
+}
+#wrapper aside {
+  display: inline-block;
+  width: 210px;
+  margin-top: 15px;
+  vertical-align: top;
+}
+#wrapper aside section {
+  box-sizing: border-box;
+  padding: 25px 15px;
+  border: 1px dashed #aaaaaa;
+}
+#wrapper aside section h4 {
+  margin-bottom: 5px;
+  color: #666666;
+  font-size: 14px;
+}
+#wrapper aside section a {
+  display: block;
+  color: #0066cc;
+  font-size: 14px;
+}
+#wrapper aside section a:hover {
+  color: #ff4b33;
+  text-decoration: underline;
+}
+#wrapper aside section form {
+  display: block;
+  margin-bottom: 20px;
+}
+#wrapper aside section form input[type=text] {
+  display: inline-block;
+  width: 105px;
+  padding: 3px 1px;
+  vertical-align: middle;
+  border: 1px solid #cccccc;
+}
+#wrapper aside section form input[type=submit] {
+  display: inline-block;
+  padding: 2px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+footer {
+  padding: 10px;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+  background-color: #eeeeee;
+  color: #666666;
+  font-size: 10px;
+}
+/*# sourceMappingURL=style.css.map */

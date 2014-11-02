@@ -1,0 +1,60 @@
+﻿fieldset, input, textarea{
+    border-radius: 5px;
+}
+
+form {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+
+    h1 {
+        font-size: 3em;
+
+        span {
+            font-size: 0.3em;
+        }
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    div {
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+
+        input[type=reset], input[type=submit] {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+            padding: 5px;
+        }
+    }
+
+
+    fieldset {
+        display: inline-block;
+        vertical-align: top;
+        border: 3px solid white;
+
+        legend {
+            margin: auto;
+        }
+
+        textarea {
+            display: block;
+        }
+
+        &:nth-of-type(1) {
+            /*width: 200px;*/
+        }
+
+        &:nth-of-type(2) {
+            /*width: 300px;*/
+        }
+    }
+}

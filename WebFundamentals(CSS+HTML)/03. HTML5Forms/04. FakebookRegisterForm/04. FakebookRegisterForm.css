@@ -1,0 +1,52 @@
+﻿fieldset,
+input,
+textarea {
+  border-radius: 5px;
+}
+form {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+}
+form h1 {
+  font-size: 3em;
+}
+form h1 span {
+  font-size: 0.3em;
+}
+form h3 {
+  font-size: 1em;
+}
+form div {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+form div input[type=reset],
+form div input[type=submit] {
+  display: block;
+  width: 100px;
+  margin: 10px auto;
+  padding: 5px;
+}
+form fieldset {
+  display: inline-block;
+  vertical-align: top;
+  border: 3px solid white;
+}
+form fieldset legend {
+  margin: auto;
+}
+form fieldset textarea {
+  display: block;
+}
+form fieldset:nth-of-type(1) {
+  /*width: 200px;*/
+}
+form fieldset:nth-of-type(2) {
+  /*width: 300px;*/
+}
+/*# sourceMappingURL=04. FakebookRegisterForm.css.map */

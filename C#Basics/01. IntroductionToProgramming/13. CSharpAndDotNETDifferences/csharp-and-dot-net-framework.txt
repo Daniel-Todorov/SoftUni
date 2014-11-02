@@ -1,0 +1,1 @@
+﻿C# is a programming language. .NET framework, on the other hand, is a library and runtime environment which is used by such language to execute their content. Without the .NET framework, a C# program can't run.

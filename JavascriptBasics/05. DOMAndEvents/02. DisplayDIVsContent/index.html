@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Problem 2. Display DIVs Content</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>first div</div>
+<div>second div</div>
+<div class="empty"></div>
+<div>third div
+	<div>inner div</div>
+</div>
+<ul id="result"></ul>
+<script>
+	var resultContainer = document.querySelector('#result'),
+			listItem = document.createElement('li'),
+			currentListItem,
+			divs = document.querySelectorAll('div'),
+			numberOfDivs = divs.length;
+
+	for (var i = 0; i < numberOfDivs; i++) {
+		currentListItem = listItem.cloneNode(false);
+		currentListItem.innerText = divs[i].innerText;
+		listItem.appendChild(currentListItem);
+	}
+
+	resultContainer.appendChild(listItem);
+</script>
+
+</body>
+</html>

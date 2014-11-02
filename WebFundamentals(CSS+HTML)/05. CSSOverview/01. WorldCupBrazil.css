@@ -1,0 +1,125 @@
+﻿#border {
+  border: 2px solid #000;
+}
+table,
+thead,
+tbody,
+tr,
+th,
+td,
+select,
+img,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #00923e;
+}
+body .right-align {
+  text-align: right;
+}
+body .right-align img {
+  float: right;
+  margin: 0 0 0 5px;
+}
+body .left-align {
+  text-align: left;
+}
+body .left-align img {
+  float: left;
+  margin: 0 5px 0 0;
+}
+body .center-align {
+  text-align: center;
+}
+table {
+  background-color: #fff;
+  border: 2px solid black;
+  display: inline-block;
+  border-radius: 20px;
+  border-collapse: collapse;
+}
+table thead {
+  background-color: #f8c711;
+  border-top-left-radius: 20px;
+}
+table thead th {
+  padding: 8px 5px;
+  border-right: 2px solid black;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+table thead th:first-of-type {
+  width: 145px;
+  border: 0 solid black;
+  border-right: 2px solid black;
+  border-top-left-radius: 20px;
+}
+table thead th:last-of-type {
+  border-right: 0 solid black;
+  border-top-right-radius: 20px;
+}
+table tbody td {
+  padding: 15px 5px;
+  border: 2px solid #000;
+}
+table tbody td select {
+  height: 35px;
+  font-weight: bold;
+  color: #008000;
+}
+table tbody td button {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-width: 2px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #ffffff;
+}
+table tbody td button.red-button {
+  background-color: red;
+}
+table tbody td button.green-button {
+  background-color: #008000;
+}
+table tbody td:first-of-type {
+  border-left: 0 solid black;
+}
+table tbody td:last-of-type {
+  border-right: 0 solid black;
+}
+table tbody td:nth-of-type(5),
+table tbody td:nth-of-type(7) {
+  width: 125px;
+}
+table tbody td:nth-of-type(6) {
+  padding: 5px 5px;
+}
+table tbody td:nth-of-type(8) {
+  padding: 5px 10px;
+}
+table tbody td.inactive select {
+  color: #ff0000;
+  background-color: #dcdcdc;
+}
+table tbody tr:last-of-type td {
+  border-bottom: 0 solid black;
+}
+table tbody tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 20px;
+}
+table tbody tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 20px;
+}
+table tbody tr:nth-child(2n + 1) {
+  background-color: #fff;
+}
+table tbody tr:nth-child(2n) {
+  background-color: #c8c8c8;
+}
+/*# sourceMappingURL=01. WorldCupBrazil.css.map */

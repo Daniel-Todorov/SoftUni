@@ -1,0 +1,1 @@
+﻿public delegate double CalculateInterestDelegate(double sum, double interest, double years);

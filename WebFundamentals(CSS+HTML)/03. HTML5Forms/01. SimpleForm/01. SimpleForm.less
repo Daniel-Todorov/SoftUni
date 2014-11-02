@@ -1,0 +1,98 @@
+﻿form {
+    width: 700px;
+    padding: 5px;
+    background-color: aliceblue;
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+
+    h1 {
+        font-size: 1.5em;
+        color: blue;
+    }
+
+    p {
+        font-size: 0.8em;
+        color: darkgray;
+    }
+
+    fieldset {
+        display: inline-block;
+        width: 45%;
+        height: 200px;
+        padding: 10px;
+        vertical-align: top;
+        text-align: center;
+        border: none;
+
+        input {
+            display: inline-block;
+            width: 300px;
+            padding: 5px;
+        }
+
+        &:nth-of-type(1) {
+            legend {
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: gray;
+
+                span {
+                    color: blue;
+                }
+            }
+
+            input[type=submit] {
+                float: right;
+                display: inline;
+                width: 120px;
+                padding: 5px 30px;
+                border: 2px solid blue;
+                font-weight: bold;
+                color: blue;
+            }
+        }
+
+        &:nth-of-type(2) {
+            background-color: blue;
+            color: white;
+
+            legend {
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: bold;
+                background-color: blue;
+            }
+
+            input[type=checkbox]{
+                display: inline;
+                float: left;
+                width: 15px;
+            }
+
+            label{
+                display: inline;
+                float: left;
+                text-align: left;
+                font-size: 0.75em;
+            }
+
+            input[type=submit]{
+               display: inline;
+               float: right;
+               width: 120px;
+               border: 2px solid orange;
+               font-weight: bold;
+               color: white;
+               background-color: blue;
+            }
+
+            a{
+                float: right;
+                clear: right;
+                padding: 10px 0 0;
+                font-size: 0.75em;
+                color: white;
+            }
+        }
+    }
+}

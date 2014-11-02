@@ -1,0 +1,107 @@
+body, form, fieldset, legend, label, input, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+}
+
+form {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 15px 15px;
+    text-align: center;
+    border-radius: 5px;
+    background-image: url(resources/formBackground.jpg);
+
+    fieldset {
+        text-align: left;
+        border: none;
+
+        legend {
+            padding: 9px 0 8px;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+        }
+
+        label {
+            position: relative;
+            display: block;
+            margin: 0 0 2px;
+            padding: 0 10px;
+            font-size: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.3);
+
+            span {
+                position: absolute;
+                top: 10px;
+            }
+
+            input, textarea {
+                display: inline-block;
+                width: 175px;
+                margin: 5px 55px 5px 100px;
+                padding: 4px;
+                border: none;
+                border-radius: 2px;
+                outline: none;
+                
+                &:focus{
+                    background-color: #eaeaea;
+                }
+            }
+
+            textarea {
+                height: 75px;
+                resize: vertical;
+            }
+
+            label {
+                display: inline-block;
+                width: 100px;
+                margin: 40px 0 10px;
+                padding: 0;
+                text-align: center;
+                border: none;
+                background: none;
+                background-repeat: no-repeat;
+                background-position: 35px;
+                background-size: 20px;
+
+                input {
+                    display: inline-block;
+                    width: auto;
+                    margin: 0 25px 0 0;
+                    padding: 0;
+                }
+
+                &:nth-of-type(1) {
+                    background-image: url(resources/visa.png);
+                }
+
+                &:nth-of-type(2) {
+                    background-image: url(resources/amex.png);
+                    background-position: 32px;
+                    background-size: 20px 15px;
+                }
+
+                &:nth-of-type(3) {
+                    background-image: url(resources/mastercard.png);
+                    background-position: 18px;
+                }
+            }
+        }
+    }
+
+    input[type=submit]{
+        display: inline-block;
+        margin: 10px 0 0;
+        padding: 5px 20px;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        background-color: #04152f;
+    }
+}

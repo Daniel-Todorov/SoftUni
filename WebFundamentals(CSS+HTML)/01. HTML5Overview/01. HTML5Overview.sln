@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0FBA96E3-E3A0-417E-937C-02B09ED0D58A}"
+	ProjectSection(SolutionItems) = preProject
+		01. HelloHTML.html = 01. HelloHTML.html
+		02. ParagraphsAndImagesOfText.html = 02. ParagraphsAndImagesOfText.html
+		03. RunnersHome.html = 03. RunnersHome.html
+		04. HTMLLists.html = 04. HTMLLists.html
+		05. PowerPointSlide.html = 05. PowerPointSlide.html
+		06. Friends.html = 06. Friends.html
+		06. Home.html = 06. Home.html
+		06. Profile.html = 06. Profile.html
+		doge.png = doge.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

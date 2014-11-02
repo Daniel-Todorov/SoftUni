@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>01. Problem</title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="css.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-static-top" role="navigation">
+                <div class="col-sm-12">
+
+                    <nav class="navbar-header">
+                        <a class="navbar-brand" href="/"><span>Software University</span><div class="beta">beta</div></a>
+                    </nav>
+
+                    <div class="menuContainer">
+                        <nav class="navContainer">
+                            <ul class="nav navbar-nav navix">
+                                <li class="loginSearchLI">
+                                    <div class="logIn">
+                                        <div id="search" class="searchBar">
+                                            <form method="get" autocomplete="off" action="/Search/Results" class="pull-left" novalidate="novalidate">
+                                                <input type="text" maxlength="100" placeholder="Търси..." name="query" class="searchInput">
+                                                <button type="submit" class="searchButton"></button>
+                                            </form>
+                                        </div>
+
+                                        <div class="profileBox">
+
+                                            <div id="personalPicContainer">
+                                                <img width="80" id="personalPicture" src="/users/profile/ShowAvatar/cd46fd1d-c140-4378-8d39-8a69622954c8" alt="dani_ddd avatar">
+                                            </div>
+                                            <form action="/account/logoff" class="accountForm" id="logoutForm" method="post" novalidate="novalidate">
+                                                <input name="__RequestVerificationToken" type="hidden" value="k3VA_Z9p-Gfy6qBHrrmzWX_wNlOW4DKrB4AU9W4KTpTU9mTEiuujrynoId9642F2OiCbj6Pxrjsl6ZJpd-hmiULGgfYtm9xi_uljJiC3lEpG59FkEG9trcvQK_dA7sxDLp6kLTDQtTFWFP5kOo9exg2">        <ul id="notificationsTab">
+                                                    <li id="notifications-tab">
+                                                        <ul id="notifications-list" class="hide-notifications"><li id="markAllAsReadButton"><a href="#">Маркирай всички</a></li><li class="viewed"><a id="1054" class="notification" href="https://softuni.bg/trainings/examgroups/chosen/17"><small>Успешно се записахте за изпит за курса <strong>Web Fundamentals (HTML + CSS) май 2014</strong><br></small></a></li><li><a href="/notifications">Виж всички</a></li></ul>
+                                                        <a id="notifications" href="#"><span class="unread-notifications-count">0</span><span class="notifications"></span></a>
+                                                    </li>
+
+                                                    <li class="dropdown">
+                                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                            user
+                                                            <strong class="caret"></strong>
+                                                        </a>
+
+                                                        <ul class="dropdown-menu " id="dropdownAdmin">
+                                                            <li><a class="custom-dropdown-header" href="/users/profile/show" title="Profile">Потребителски панел</a></li>
+                                                            <li><a href="/account/manage" title="Manage">Управление на акаунта</a></li>
+                                                            <li><a href="/users/profile/edit">Редактиране на профила</a></li>
+                                                            <li><a href="/users/teamwork/list">Екипна работа</a></li>
+
+
+                                                            <li><a href="/content/sentinel/sentinel.zip">Sentinel клиент</a></li>
+                                                            <li><a href="javascript:document.getElementById('logoutForm').submit()">Изход</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li><a href="/news">Новини</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        За университета
+                                        <strong class="caret"></strong>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/about">За нас</a></li>
+                                        <li><a href="/professions">Професии</a></li>
+                                        <li><a href="/plans">Планове</a></li>
+                                        <li><a href="/partner-universities">Университети-партньори</a></li>
+                                        <li><a href="/trainers">Преподаватели</a></li>
+                                        <li><a href="/dorms">Общежития</a></li>
+                                        <li><a href="/apply">Кандидатстване</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        Обучения
+                                        <strong class="caret"></strong>
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="custom-dropdown-header" href="/trainings/courses/list">Курсове</a></li>
+                                        <li><a href="/trainings/coursesinstances/details/1">Java Basics май 2014</a></li>
+                                        <li><a href="/trainings/coursesinstances/details/2">C# Basics март 2014</a></li>
+                                        <li><a href="/trainings/coursesinstances/details/1036">C# Basics май 2014</a></li>
+                                        <li><a href="/trainings/coursesinstances/details/1048">C# Basics юли 2014</a></li>
+                                        <li><a href="/trainings/coursesinstances/details/3">Web Fundamentals (HTML + CSS) май 2014</a></li>
+                                        <li><a href="/trainings/coursesinstances/details/6">Teamwork and Personal Skills май 2014</a></li>
+                                        <li><a class="custom-dropdown-header" href="/trainings/fasttracks">Fast track курсове</a></li>
+                                        <li><a href="/trainings/fasttracks/details/1034">HTML/CSS (June 2014)</a></li>
+                                        <li><a href="/trainings/fasttracks/details/1033">PHP/MySQL (June 2014)</a></li>
+
+                                        <li><a class="custom-dropdown-header" href="/trainings/seminars/list">Семинари</a></li>
+                                        <li><a href="/trainings/seminars/details/1045">First steps with Microsoft SQL Server</a></li>
+                                        <li><a href="/trainings/seminars/details/1049">SEO оптимизация, социални мрежи, дигитален маркетинг</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="/companies">Работа</a></li>
+                                <li><a href="/forum">Форум</a></li>
+                                <li><a href="/contacts">Контакти</a></li>
+
+
+                            </ul><!-- /nav navbar-nav navix -->
+
+                        </nav><!-- /navbar-collapse collapse -->
+                        <a href="javascript:;" id="toggleNavigation">
+                            <svg x="0px" y="0px" width="35px" height="25px" viewBox="0 0 35 25" enable-background="new 0 0 35 25" xml:space="preserve">
+                            <defs>
+            </defs>
+                            <line id="topLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="2.5" x2="32.5" y2="2.5"></line>
+                            <line id="middleLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="12.5" x2="32.5" y2="12.5"></line>
+                            <line id="bottomLine" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="2.5" y1="22.5" x2="32.5" y2="22.5"></line>
+        </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

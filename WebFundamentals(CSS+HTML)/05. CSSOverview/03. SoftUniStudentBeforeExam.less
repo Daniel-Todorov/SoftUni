@@ -1,0 +1,88 @@
+﻿@face-dimention: 500px;
+@eye-dimention: @face-dimention / 5;
+@retina-dimention: @eye-dimention / 5;
+@nose-dimention: @face-dimention / 6;
+@mouth-width: @face-dimention / 2;
+@tooth-dimention: @mouth-width / 5;
+
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    position: absolute;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+#face {
+    position: relative;
+    width: @face-dimention;
+    height: @face-dimention;
+    margin: 50px;
+    background-color: yellow;
+
+    .eye {
+        top: 100px;
+        width: @eye-dimention;
+        height: @eye-dimention;
+        background-color: white;
+
+        div {
+            width: @retina-dimention;
+            height: @retina-dimention;
+            background-color: black;
+        }
+
+        &#left {
+            left: 100px;
+
+            div {
+                left: @retina-dimention * 2.8;
+                top: @retina-dimention * 2.8;
+            }
+        }
+
+        &#right {
+            left: 300px;
+
+            div {
+                left: @retina-dimention * 0.1;
+                top: @retina-dimention * 0.1;
+            }
+        }
+    }
+
+    #nose{
+        top: (@face-dimention / 2) - (@nose-dimention / 2);
+        left: 0;
+        right: 0;
+        margin: auto;
+        vertical-align: central;
+        width: @nose-dimention;
+        height: @nose-dimention;
+        background-color: red;
+    }
+
+    #mouth{
+        top: @eye-dimention * 3.2;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: @mouth-width;
+        height: @eye-dimention;
+        border-radius: @eye-dimention / 2;
+        text-align: center;
+        background-color: white;
+
+        div{
+            position: static;
+            display: inline-block;
+            width: @tooth-dimention;
+            height: @tooth-dimention;
+            border-top: 0 solid black;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}

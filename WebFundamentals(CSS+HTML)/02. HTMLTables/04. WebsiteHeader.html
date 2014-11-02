@@ -1,0 +1,79 @@
+﻿<!--Problem 4.	*Website Header
+Create a Web page header that looks like the picture below (100% accuracy is not required). 
+Use tables to achieve the layout. Use list for the menu. 
+Use text input field and button for the search. 
+Link the SoftUni logo with https://softuni.bg. 
+The menu buttons must work (open some URL). 
+Making the menu with a dropdown functionality is optional. 
+You don't need to implement the same styles as the example.-->
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>04. Problem</title>
+    <style>
+        td{
+            padding: 5px 10px;
+        }
+
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <table style="background-color: #234465; color: #fff;">
+        <tbody>
+            <tr>
+                <td rowspan="2" style="vertical-align: middle;"><a href="https://softuni.bg"><img src="softuni-header.png" /></a></td>
+                <td colspan="3" style="text-align: right; vertical-align: middle;">0<img src="bell-header.png" style="display: inline-block; height: 20px;"/></td>
+                <td colspan="3">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://softuni.bg/users/profile/show">
+                                        <select style="background-color: #234465; border:none; color: white;">
+                                            <option>USER</option>
+                                        </select>
+                                    </a>
+                                </td>
+                                <td><input type="text" placeholder="Search..."/></td>
+                                <td><input type="image" src="magnifying-header.png" style="display: inline-block; height: 20px; border:none; color: white;" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://softuni.bg/news">NEWS</a></td>
+                <td>
+                    <a href="https://softuni.bg/about">
+                        <select style="background-color: #234465; border:none; color: white;">
+                            <option>ABOUT THE UNIVERSITY</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://softuni.bg/trainings/courses/list">
+                        <select style="background-color: #234465; border:none; color: white;">
+                            <option>TRAINING COURSES</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </a>
+                </td>
+                <td><a href="https://softuni.bg/companies">FOR COMPANIES</a></td>
+                <td><a href="https://softuni.bg/forum">FORUM</a></td>
+                <td><a href="https://softuni.bg/contacts">CONTACTS</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
