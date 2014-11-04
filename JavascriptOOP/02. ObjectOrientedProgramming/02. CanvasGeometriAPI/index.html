@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Canvas Drawing API</title>
+</head>
+<body>
+<section style="display: inline-block; width: 40%; vertical-align: top">
+	<form>
+		<label for="x1">X1:</label><input id="x1" type="number" min="0" value="0">
+		<br>
+		<label for="y1">Y1:</label><input id="y1" type="number" min="0" value="0">
+		<br>
+		<label for="color">Color: </label><input id="color" type="color" value="#000000">
+		<br>
+		<label for="shapeSelector">Shape: </label>
+		<select id="shapeSelector">
+			<option value="circle">Circle</option>
+			<option value="rectangle">Rectangle</option>
+			<option value="triangle">Triangle</option>
+			<option value="segment">Segment</option>
+			<option value="point" selected="selected">Point</option>
+		</select>
+		<br>
+		<div id="circleInfo">
+			<label for="radius">Radius: </label>
+			<input id="radius" type="number" min="1" value="1">
+		</div>
+		<div id="rectangleInfo">
+			<label for="width">Width: </label>
+			<input id="width" type="number" min="1" value="1">
+			<br>
+			<label for="height">Height: </label>
+			<input id="height" type="number" min="1" value="1">
+		</div>
+		<div id="secondPointInfo">
+			<label for="x2">X2: </label>
+			<input id="x2" type="number" min="0" value="0">
+			<br>
+			<label for="y2">Y2: </label>
+			<input id="y2" type="number" min="0" value="0">
+		</div>
+		<div id="thirdPointInfo">
+			<label for="x3">X3: </label>
+			<input id="x3" type="number" min="0" value="0">
+			<br>
+			<label for="y3">Y3: </label>
+			<input id="y3" type="number" min="0" value="0">
+		</div>
+		<select id="drawedShapesHolder" multiple="multiple" style="min-width: 100px;">
+		</select>
+		<br>
+		<button id="removeButton">Remove</button>
+		<button id="addButton">Add</button>
+	</form>
+</section>
+<section style="display: inline-block; width: 40%">
+	<h1>Canvas</h1>
+	<canvas id="canvas" width="600" height="400" style="border:2px solid black"></canvas>
+</section>
+<script src="Shapes.js"></script>
+</body>
+</html>
