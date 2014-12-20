@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Page</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body ng-app="studentPage" ng-controller="StudentPage">
+
+<table border="1">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Photo</th>
+		<th>Grade</th>
+		<th>School</th>
+		<th>Teacher</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>{{studentInfo.name}}</td>
+		<td><img ng-src="{{studentInfo.photo}}"></td>
+		<td>{{studentInfo.grade}}</td>
+		<td>{{studentInfo.school}}</td>
+		<td>{{studentInfo.teacher}}</td>
+	</tr>
+	</tbody>
+</table>
+
+<script src="lib/angular/angular.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/controllers/StudentPage.js"></script>
+</body>
+</html>

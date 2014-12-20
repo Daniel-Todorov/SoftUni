@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tiger Page</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body ng-app="tigerApp" ng-controller="TigerController">
+
+<section ng-style="sectionStyle">
+	<div ng-style="leftSide">
+		<h1 ng-style="titleStyle">Tiger</h1>
+		<p><strong>Name: </strong>{{tigerInfo.Name}}</p>
+		<p><strong>Born: </strong>{{tigerInfo.Born}}</p>
+		<p><strong>Birth date: </strong>{{tigerInfo.BirthDate}}</p>
+		<p><strong>Live: </strong>{{tigerInfo.Live}}</p>
+	</div>
+	<img ng-src="{{tigerInfo.Image}}" ng-style="rightSide">
+</section>
+
+<script src="lib/angular/angular.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/controllers/TigerController.js"></script>
+</body>
+</html>
