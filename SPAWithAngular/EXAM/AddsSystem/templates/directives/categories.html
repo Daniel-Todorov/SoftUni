@@ -1,0 +1,6 @@
+<aside>
+    <h2>Categories</h2>
+    <ul>
+        <li ng-repeat="category in categories" ng-class="{'active-option': filterOptions.categoryId == category.id}" ng-click="changeSelectedCategory(category.id)">{{category.name}}</li>
+    </ul>
+</aside>

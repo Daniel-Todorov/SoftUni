@@ -1,0 +1,6 @@
+<aside>
+    <h2>Towns</h2>
+    <ul>
+        <li ng-repeat="town in towns" ng-class="{'active-option': filterOptions.townId == town.id}" ng-click="changeSelectedTown(town.id)">{{town.name}}</li>
+    </ul>
+</aside>

@@ -1,0 +1,8 @@
+<aside class="navigation">
+    <h2>Navigation</h2>
+    <ul class="navigation-menu">
+        <li ng-repeat="option in options" ng-class="{'active-option': $index == selectedIndex}" ng-show="usersDataWorker.isLogged() || $index == 0">
+            <a ng-href="{{option.href}}">{{option.text}}</a>
+        </li>
+    </ul>
+</aside>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Application</title>
+    <title>Ads App</title>
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body ng-app="myApp" ng-cloak>
@@ -11,9 +11,7 @@
 
 </div>
 
-<footer class="text-center" ng-controller="FooterController">
-    <p><span>&copy;</span> {{year}} by {{author}}, {{copyRights}}</p>
-</footer>
+<div footer-directive=""></div>
 
 <!--common-->
 <script src="libs/angular.js"></script>
@@ -24,16 +22,31 @@
 <script src="scripts/app.js"></script>
 
 <!--controllers-->
-<!--<script src="scripts/controllers/HomeController.js"></script>-->
+<script src="scripts/controllers/HomeController.js"></script>
+<script src="scripts/controllers/HeaderController.js"></script>
 <script src="scripts/controllers/FooterController.js"></script>
+<script src="scripts/controllers/NavigationController.js"></script>
+<script src="scripts/controllers/NotloggedController.js"></script>
+<script src="scripts/controllers/CategoriesController.js"></script>
+<script src="scripts/controllers/TownsController.js"></script>
+<script src="scripts/controllers/PagingController.js"></script>
 
 <!--services-->
 <script src="scripts/services/utilitiesDataWorker.js"></script>
 <script src="scripts/services/usersDataWorker.js"></script>
 <script src="scripts/services/adsDataWorker.js"></script>
 
+<!--directives-->
+<script src="scripts/directives/navigationDirective.js"></script>
+<script src="scripts/directives/footerDirective.js"></script>
+<script src="scripts/directives/headerDirective.js"></script>
+<script src="scripts/directives/notloggedDirective.js"></script>
+<script src="scripts/directives/categoriesDirective.js"></script>
+<script src="scripts/directives/townsDirective.js"></script>
+<script src="scripts/directives/pagingDirective.js"></script>
+
 <!--filters-->
-<script src="js/filters/transformDate.js"></script>
+<script src="scripts/filters/transformDate.js"></script>
 
 </body>
 </html>

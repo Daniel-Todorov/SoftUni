@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div header-directive></div>
+<section>
+    <div navigation-directive></div>
+    <div notlogged-directive></div>
+</section>
 
-</body>
-</html>
+<section>
+    <article ng-repeat="ad in ads">
+        <header>
+            <h3>{{ad.title}}</h3>
+            <time>{{ad.date | transformDate}}</time>
+        </header>
+        <div>
+            <img ng-src="{{ad.imageDataUrl}}">
+        </div>
+        <div>
+            <p>{{ad.text}}</p>
+            <div>
+                <p>Name:</p>
+                <p>Email:</p>
+                <p>Phone:</p>
+            </div>
+            <div>
+                <p>{{ad.ownerName}}</p>
+                <p>{{ad.ownerEmail}}</p>
+                <p>{{ad.ownerPhone}}</p>
+            </div>
+        </div>
+    </article>
+    <div paging-directive></div>
+</section>
+
+<section>
+    <div categories-directive></div>
+    <div towns-directive></div>
+</section>

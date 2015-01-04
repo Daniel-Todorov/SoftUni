@@ -27,6 +27,14 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
             return deferred.promise;
         }
 
+        function logout() {
+            var deferred = $q.defer();
+
+            deferred.resolve(sessionStorage.removeItem('currentUser'));
+
+            return deferred.promise;
+        }
+
         function register(registerInfo) {
             var deferred = $q.defer();
 
@@ -94,7 +102,7 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
             return deferred.promise;
         }
 
-        function getCurrentUser() {
+        function getCurrentUsername() {
             return JSON.parse(sessionStorage.currentUser).username;
         }
 
@@ -105,7 +113,7 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
         }
 
         function isLogged() {
-            if (!!JSON.parse(sessionStorage.currentUser)) {
+            if (sessionStorage.currentUser && !!JSON.parse(sessionStorage.currentUser)) {
                 return true;
             }
 
@@ -113,7 +121,7 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
         }
 
         function isAdmin() {
-            if (!!JSON.parse(sessionStorage.currentUser).isAdmin) {
+            if (sessionStorage.currentUser && !!JSON.parse(sessionStorage.currentUser).isAdmin) {
                 return true;
             }
 
@@ -122,13 +130,14 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
 
         return {
             login: login,
+            logout: logout,
             register: register,
             changePassword: changePassword,
             getUserProfile: getUserProfile,
             editProfile: editProfile,
             isLogged: isLogged,
             isAdmin: isAdmin,
-            getCurrentUser: getCurrentUser,
+            getCurrentUsername: getCurrentUsername,
             getAuthorizationHeader: getAuthorizationHeader
         };
     }]);
