@@ -1,9 +1,15 @@
 'use strict';
 
-app.controller('HomeController', ['$scope', 'usersDataWorker', 'utilitiesDataWorker',
-    function ($scope, usersDataWorker, utilitiesDataWorker) {
+app.controller('HomeController', ['$scope', '$location', '$window', 'usersDataWorker', 'utilitiesDataWorker',
+    function ($scope, $location, $window, usersDataWorker, utilitiesDataWorker) {
         $scope.headerTitle = 'Ads Home';
         $scope.selectedIndex = 0;
+
+        $scope.isLogged = usersDataWorker.isLogged();
+
+        if (usersDataWorker.isLogged()) {
+            $scope.username = usersDataWorker.getCurrentUsername();
+        }
 
         $scope.filterOptions = {
             startPage: 1,
@@ -11,10 +17,6 @@ app.controller('HomeController', ['$scope', 'usersDataWorker', 'utilitiesDataWor
             categoryId: '',
             townId: ''
         };
-
-        if (usersDataWorker.isLogged()) {
-            $scope.username = usersDataWorker.getCurrentUsername();
-        }
 
         $scope.filterAds = function () {
             utilitiesDataWorker.getAllAds($scope.filterOptions).then(function (data) {
