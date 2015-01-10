@@ -4,6 +4,7 @@ app.controller('LoginController', ['$scope', '$location', '$timeout', 'utilities
     function ($scope, $location, $timeout, utilitiesDataWorker, usersDataWorker) {
 
         $scope.headerTitle = 'Ads Login';
+        $scope.selectedIndex = 0;
 
         $scope.login = function (loginInfo) {
 

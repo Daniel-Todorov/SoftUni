@@ -1,7 +1,12 @@
-<ul>
-    <li ng-hide="pages.length <= 1" ng-click="goToFirst()">First</li>
-    <li ng-hide="pages.length <= 1" ng-click="goToPrevious()">Previous</li>
-    <li ng-repeat="num in pages track by $index" ng-class="{'active-page': filterOptions.startPage == $index + 1}" ng-click="changeSelectedPage($index + 1)">{{$index + 1}}</li>
-    <li ng-hide="pages.length <= 1" ng-click="goToNext()">Next</li>
-    <li ng-hide="pages.length <= 1" ng-click="goToLast()">Last</li>
+<ul class="pager">
+    <li ng-hide="pages.length <= 1" ng-click="goToFirst()">
+        First
+    </li><li ng-hide="pages.length <= 1" ng-click="goToPrevious()">
+        Previous
+    </li><li class="number" ng-repeat="num in pages track by $index" ng-class="{'active-page': filterOptions.startPage == $index + 1}" ng-click="changeSelectedPage($index + 1)">{{$index + 1}}
+    </li><li ng-hide="pages.length <= 1" ng-click="goToNext()">
+        Next
+    </li><li ng-hide="pages.length <= 1" ng-click="goToLast()">
+        Last
+    </li>
 </ul>

@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div header-directive></div>
 
-</body>
-</html>
+<section class="left-side-section">
+    <div navigation-directive></div>
+    <div statuses-directive></div>
+</section><section class="my-ads-main-section">
+    <div class="result-message" ng-class="{error: hasError, success: hasSuccess}" ng-show="hasError || hasSuccess">
+        <div ng-show="hasError">
+            <p>{{errorMessage}}</p>
+        </div>
+        <div ng-show="hasSuccess">
+            <p>{{successMessage}}</p>
+        </div>
+        <div class="dismiss-message-button" ng-click="dismissError()">X</div>
+    </div>
+    <article ng-repeat="ad in ads">
+        <div class="side info-container">
+            <header>
+                <h3>{{ad.title}}</h3><time>{{ad.date | transformDate}}</time>
+            </header><div class="image-container">
+                <img ng-src="{{ad.imageDataUrl}}">
+            </div><div class="data-container">
+                <p class="text full">{{ad.text}}</p>
+                <p class="full"><span class="label">Category:</span><span class="text part">{{ad.categoryName}}&nbsp;</span></p>
+                <p class="full"><span class="label">Town:</span><span class="text part">{{ad.townName}}&nbsp;</span></p>
+            </div>
+        </div><div class="side status-container">
+            <h4>Status:</h4>
+            <p class="text">{{ad.status | transformStatus}}</p>
+            <button class="normal-button" ng-show="ad.status == 'Published' || ad.status == 'WaitingApproval'" ng-click="deactivateAd(ad.id)">Deactivate</button>
+            <button class="normal-button" ng-show="ad.status == 'Inactive'" ng-click="goToEdit(ad.id)">Edit</button>
+            <button class="normal-button" ng-show="ad.status == 'Inactive'" ng-click="publishAgainAd(ad.id)">Publish Again</button>
+            <button class="normal-button" ng-show="ad.status == 'Inactive'" ng-click="goToDelete(ad.id)">Delete</button>
+        </div>
+    </article>
+    <div paging-directive></div>
+</section>

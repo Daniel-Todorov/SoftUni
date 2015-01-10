@@ -1,10 +1,50 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div header-directive></div>
+<section class="left-side-section">
+    <div navigation-directive></div>
+</section><section class="publish-main-section">
+    <div class="result-message" ng-class="{error: hasError, success: hasSuccess}" ng-show="hasError || hasSuccess">
+        <div ng-show="hasError">
+            <p>{{errorMessage}}</p>
+        </div>
+        <div ng-show="hasSuccess">
+            <p>{{successMessage}}</p>
+        </div>
+        <div class="dismiss-message-button" ng-click="dismissError()">X</div>
+    </div>
+    <div class="form-container">
+        <h2>Publish New Ad</h2>
 
-</body>
-</html>
+        <form name="publishAdForm">
+            <div class="top-section">
+                <div>
+                    <label for="title">Title:</label><input id="title" type="text" ng-required="true" ng-model="publishInfo.title"><div class="image-container">
+                        <img ng-show="publishInfo.imageDataUrl" ng-src="{{publishInfo.imageDataUrl}}">
+                    </div><label for="text">Text:</label><textarea id="text" ng-required="true" ng-model="publishInfo.text"></textarea>
+                    <!--<input id="text" type="text" ng-required="true" ng-model="publishInfo.text">-->
+                </div>
+
+            </div>
+            <label for="imageDataUrl">
+                Image:
+            </label><span class="fake-input">
+                {{imageUrl}}&nbsp;
+            </span><label class="normal-button browse" for="imageDataUrl">
+                Browse ...
+            </label>
+            <input file-input id="imageDataUrl" type="file" ng-hide="true" ng-model="publishInfo.imageDataUrl" onchange="angular.element(this).scope().getImageUrl(this)">
+            <label for="categoryId">
+                Category:
+            </label><select id="categoryId" ng-model="publishInfo.categoryId" ng-options="category.id as category.name for category in categories">
+                <option value="">-- Category --</option>
+            </select>
+            <label for="townId">
+                Town:
+            </label><select id="townId" ng-model="publishInfo.townId" ng-options="town.id as town.name for town in towns">
+                <option value="">-- Town --</option>
+            </select>
+            <button class="normal-button" ng-click="publish(publishInfo)" ng-class="{disabled: publishAdForm.$invalid}" ng-disabled="publishAdForm.$invalid" ng-hide="isNewAdPublished">Publish</button>
+            <button class="normal-button" ng-click="publishNewAd()" ng-show="isNewAdPublished">Publish new ad</button>
+            <button class="normal-button" ng-click="cancel()">Cancel</button>
+        </form>
+    </div>
+</section>

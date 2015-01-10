@@ -1,7 +1,7 @@
 'use strict';
 
-app.controller('NavigationController', ['$scope', '$location', 'usersDataWorker', 'utilitiesDataWorker',
-    function ($scope, $location, usersDataWorker, utilitiesDataWorker) {
+app.controller('NavigationController', ['$scope',
+    function ($scope) {
         var options = [
             {
                 href: '#/',

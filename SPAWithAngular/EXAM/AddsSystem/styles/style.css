@@ -1,9 +1,551 @@
+body,
+div,
+section,
+nav,
+aside,
+article,
+span,
+input,
+a,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+img,
+p,
+button,
+textarea,
+time {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: Tahoma;
+}
 body {
-  color: red;
+  background-color: #E2F0D9;
+}
+body .main-header {
+  padding: 0.4em 1em;
+  border-bottom: 1px solid #527F34;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #A9D18E;
+}
+body .main-header .logged-user-name {
+  float: right;
+  margin-right: 1em;
+}
+body .main-header .link-button {
+  float: right;
+}
+body .left-side-section,
+body .right-side-section {
+  width: 18%;
+  margin: 2.5em 0 0 2.66em;
+}
+body .left-side-section .aside,
+body .right-side-section .aside {
+  margin-bottom: 2em;
+  padding: 0 1.5em 1.5em;
+  border: 1px solid #69944D;
+  box-shadow: 1px 2px 10px black;
+  background-color: #A9D18E;
+}
+body .left-side-section .aside.not-logged h3,
+body .right-side-section .aside.not-logged h3 {
+  margin: 1em 0 0;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: normal;
+}
+body .left-side-section .aside h2,
+body .right-side-section .aside h2 {
+  padding: 0.5em;
+  border-bottom: 2px solid #69944D;
+  font-size: 1.4em;
+  text-align: center;
+}
+body .left-side-section .aside ul,
+body .right-side-section .aside ul {
+  font-size: 1.2em;
+}
+body .left-side-section .aside ul li,
+body .right-side-section .aside ul li {
+  margin-top: 0.4em;
+}
+body .left-side-section .aside ul li:first-of-type,
+body .right-side-section .aside ul li:first-of-type {
+  margin-top: 0.8em;
+}
+body .left-side-section .aside ul li a,
+body .right-side-section .aside ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0.3em 0.5em;
+}
+body .center-side-section {
+  width: 54%;
+  margin: 2.5em 0 0 2.66em;
+}
+body .center-side-section article {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  box-shadow: 1px 2px 10px black;
+  background-color: #A9D18E;
+}
+body .center-side-section article header {
+  margin-bottom: 1em;
+}
+body .center-side-section article header h3 {
+  display: inline-block;
+  width: 60%;
+  font-size: 1.4em;
+}
+body .center-side-section article header time {
+  display: inline-block;
+  width: 40%;
+  font-size: 1.2em;
+  text-align: right;
+}
+body .center-side-section article .image-container {
+  display: inline-block;
+  width: 30%;
+  padding: 0.5em;
+  border: 1px dotted #75A852;
+  background-color: #C5E0B4;
+  vertical-align: top;
+}
+body .center-side-section article .image-container img {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+body .center-side-section article .ad-info-container {
+  display: inline-block;
+  width: 70%;
+  padding-left: 1.5em;
+}
+body .center-side-section article .ad-info-container .text {
+  padding: 0.5em;
+  font-size: 1.2em;
+  border: 1px dotted #75A852;
+  background-color: #C5E0B4;
+}
+body .center-side-section article .ad-info-container > div {
+  vertical-align: top;
+  font-size: 1.2em;
+}
+body .center-side-section article .ad-info-container > div.labels {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+}
+body .center-side-section article .ad-info-container > div.labels p {
+  padding-right: 0.5em;
+}
+body .center-side-section article .ad-info-container > div.values {
+  display: inline-block;
+  width: 80%;
+}
+body .center-side-section article .ad-info-container > div p {
+  margin-top: 0.5em;
+  padding: 0.5em;
+}
+body .center-side-section article .ad-info-container > div p.info {
+  border: 1px dotted #75A852;
+  background-color: #C5E0B4;
+}
+body .center-side-section article .ad-info-container > div p.email {
+  text-decoration: underline;
+  color: #0563BF;
+}
+body .login-main-section {
+  display: inline-block;
+  width: 79%;
+  padding: 0 5em 5em;
+  text-align: center;
+}
+body .login-main-section .form-container {
+  display: inline-block;
+  width: 60%;
+  margin-top: 2.5em;
+  padding: 0 1.5em 1.5em;
+  border: 1px solid #69944D;
+  border-radius: 1em;
+  box-shadow: 1px 1px 5px black;
+  background-color: #A9D18E;
+}
+body .login-main-section .form-container h2 {
+  margin: 0 0 0.5em;
+  padding: 0.5em;
+  border-bottom: 1px solid #69944D;
+  font-size: 1.4em;
+}
+body .login-main-section .form-container label,
+body .login-main-section .form-container input {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2em;
+}
+body .login-main-section .form-container label {
+  padding: 0.5em 0;
+}
+body .login-main-section .form-container .normal-button {
+  display: inline-block;
+  width: 30%;
+}
+body .register-main-section {
+  display: inline-block;
+  width: 79%;
+  padding: 0 2.5em 2.5em;
+  text-align: center;
+  font-size: 1.2em;
+}
+body .register-main-section .form-container {
+  display: inline-block;
+  width: 80%;
+  margin-top: 2.5em;
+  padding: 0 1.5em 1.5em;
+  border: 1px solid #69944D;
+  border-radius: 1em;
+  box-shadow: 1px 1px 5px black;
+  background-color: #A9D18E;
+}
+body .register-main-section .form-container h2 {
+  margin: 0 0 0.5em;
+  padding: 0.5em;
+  border-bottom: 1px solid #69944D;
+  font-size: 1.4em;
+}
+body .register-main-section .form-container .form-side {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+body .register-main-section .form-container .form-side:nth-of-type(2n + 1) {
+  padding-right: 0.75em;
+}
+body .register-main-section .form-container .form-side:nth-of-type(2n) {
+  padding-left: 0.75em;
+}
+body .register-main-section .form-container .form-side label,
+body .register-main-section .form-container .form-side input {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+body .register-main-section .form-container .form-side label {
+  padding: 0.5em 0;
+}
+body .register-main-section .form-container .normal-button {
+  display: inline-block;
+  width: 25%;
+}
+body .publish-main-section {
+  display: inline-block;
+  width: 70%;
+  padding: 0 5em 5em;
+  text-align: center;
+}
+body .publish-main-section .form-container {
+  display: inline-block;
+  width: 60%;
+  margin-top: 2.5em;
+  padding: 0 1.5em 1.5em;
+  border: 1px solid #69944D;
+  border-radius: 1em;
+  box-shadow: 1px 1px 5px black;
+  background-color: #A9D18E;
+}
+body .publish-main-section .form-container h2 {
+  margin: 0 0 0.5em;
+  padding: 0.5em;
+  border-bottom: 1px solid #69944D;
+  font-size: 1.4em;
+}
+body .publish-main-section .form-container .top-section input,
+body .publish-main-section .form-container .top-section textarea {
+  width: 50%;
+}
+body .publish-main-section .form-container .top-section textarea {
+  height: 7em;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  resize: none;
+  outline: none;
+  font-size: 1.2em;
+}
+body .publish-main-section .form-container .top-section .image-container {
+  float: right;
+  min-height: 4em;
+  width: 28%;
+  margin-top: 0.5em;
+  margin-left: 2%;
+  border: 1px dotted #77B150;
+  background-color: #C5E0B4;
+}
+body .publish-main-section .form-container .top-section .image-container img {
+  display: inline-block;
+  width: 100%;
+  max-height: 11.7em;
+  vertical-align: middle;
+}
+body .publish-main-section .form-container label,
+body .publish-main-section .form-container input {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.5em;
+  text-align: left;
+  font-size: 1.2em;
+  vertical-align: top;
+}
+body .publish-main-section .form-container label {
+  width: 20%;
+  padding: 0.5em;
+  text-align: right;
+}
+body .publish-main-section .form-container select {
+  display: inline-block;
+  width: 80%;
+  margin-top: 0.5em;
+}
+body .publish-main-section .form-container .normal-button {
+  display: inline-block;
+  width: 25%;
+}
+body .publish-main-section .form-container .normal-button:first-of-type {
+  margin-right: 5%;
+}
+body .publish-main-section .form-container .normal-button.browse {
+  display: inline-block;
+  width: 27%;
+  margin-left: 3%;
+  text-align: center;
+}
+body .my-ads-main-section {
+  display: inline-block;
+  width: 79%;
+  margin: 0 0 2.5em;
+  padding: 0 2.5em 2.5em;
+}
+body .my-ads-main-section article {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  box-shadow: 1px 2px 10px black;
+  font-size: 1.2em;
+  background-color: #A9D18E;
+}
+body .my-ads-main-section article:first-of-type {
+  margin-top: 2.5em;
+}
+body .my-ads-main-section article header {
+  margin-bottom: 1em;
+}
+body .my-ads-main-section article header h3 {
+  display: inline-block;
+  width: 60%;
+  font-size: 1.4em;
+}
+body .my-ads-main-section article header time {
+  display: inline-block;
+  width: 40%;
+  padding-right: 1em;
+  font-size: 1.2em;
+  text-align: right;
+}
+body .my-ads-main-section article .side {
+  display: inline-block;
+  vertical-align: top;
+}
+body .my-ads-main-section article .side:first-of-type {
+  width: 70%;
+}
+body .my-ads-main-section article .side:last-of-type {
+  width: 30%;
+}
+body .my-ads-main-section article .info-container {
+  border-right: 2px solid #649048;
+}
+body .my-ads-main-section article .info-container p {
+  margin-bottom: 0.5em;
+}
+body .my-ads-main-section article .info-container .text {
+  padding: 0.5em;
+  border: 1px dotted #527F34;
+  background-color: #C5E0B4;
+}
+body .my-ads-main-section article .info-container .text.part {
+  display: inline-block;
+  width: 70%;
+}
+body .my-ads-main-section article .info-container .label {
+  display: inline-block;
+  width: 30%;
+  padding-right: 1em;
+  text-align: right;
+}
+body .my-ads-main-section article .info-container .full {
+  display: block;
+  width: 95%;
+  margin: 0 2.5% 0.5em;
+}
+body .my-ads-main-section article .info-container .data-container {
+  display: inline-block;
+  width: 70%;
+  vertical-align: top;
+}
+body .my-ads-main-section article .info-container .image-container {
+  display: inline-block;
+  width: 30%;
+  border: 1px dotted #527F34;
+}
+body .my-ads-main-section article .info-container .image-container img {
+  width: 100%;
+}
+body .my-ads-main-section article .status-container {
+  padding: 0 2em;
+  text-align: center;
+}
+body .my-ads-main-section article .status-container .text {
+  padding: 0.5em;
+  border: 1px dotted #527F34;
+  background-color: #C5E0B4;
+}
+body .my-ads-main-section article .status-container .normal-button {
+  display: inline-block;
+  width: 75%;
+  font-size: 0.9em;
+}
+body .pager {
+  text-align: center;
+}
+body .pager li {
+  display: inline-block;
+  margin: 0 0 0.3em 0.3em;
+  padding: 0.5em;
+  border: 1px solid #548235;
+  box-shadow: 1px 2px 5px black;
+  font-size: 1.2em;
+}
+body .pager li.number {
+  width: 2.5em;
+}
+body .footer {
+  margin: 2.5em 0 0;
+  padding: 0.5em;
+  text-align: center;
+  border-top: 1px solid #527F34;
+  border-bottom: 1px solid #527F34;
+  background-color: #A9D18E;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+  outline: none;
+  border: 1px solid #7DB557;
+  background-color: #FFFFFF;
+  font-size: 1em;
+}
+select option {
+  text-align: center;
+}
+input,
+.fake-input {
+  padding: 0.5em;
+  outline: none;
+  border: 1px solid #7DB557;
+  background-color: #FFFFFF;
+}
+.fake-input {
+  display: inline-block;
+  width: 50%;
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  overflow: hidden;
+}
+section {
+  display: inline-block;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.result-message {
+  margin-top: 2.5em;
+  border-radius: 0.2em;
+  color: #FFFFFF;
+}
+.result-message.error {
+  border: 1px solid #A95228;
+  background-color: #EC795A;
+}
+.result-message.error .dismiss-message-button {
+  border-left: 1px solid #A95228;
+  color: #A95228;
+}
+.result-message.success {
+  border: 1px solid #5F7632;
+  background-color: #88A945;
+}
+.result-message.success .dismiss-message-button {
+  border-left: 1px solid #5F7632;
+  color: #5F7632;
+}
+.result-message div {
+  display: inline-block;
+  padding: 0.5em;
+}
+.result-message .dismiss-message-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  float: right;
+  vertical-align: top;
+}
+.normal-button {
+  display: block;
+  margin: 1em 0 0;
+  padding: 0.5em;
+  border: 1px solid #58863A;
+  border-radius: 0.5em;
+  text-align: center;
+  text-shadow: 1px 1px 3px #376618;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #70AD47;
+}
+.normal-button.disabled {
+  background-color: #A9D18E;
+}
+.link-button {
+  border-bottom: 1px dotted #2E75B6;
+  font-weight: normal;
+  color: #2E75B6;
 }
 .active-option {
-  color: orange;
+  border: 1px solid #A98000;
+  background-color: #DAA600;
 }
 .active-page {
-  color: green;
+  color: #FFFFFF;
+  background-color: #548235;
+}
+.ng-invalid {
+  border-color: red;
+}
+#invisible {
+  visibility: hidden;
 }

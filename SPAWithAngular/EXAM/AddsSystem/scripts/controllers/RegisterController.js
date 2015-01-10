@@ -4,6 +4,7 @@ app.controller('RegisterController', ['$scope', '$location', '$timeout', 'utilit
     function ($scope, $location, $timeout, utilitiesDataWorker, usersDataWorker) {
 
         $scope.headerTitle = 'Ads Registration';
+        $scope.selectedIndex = 0;
 
         $scope.register = function (registerInfo) {
 

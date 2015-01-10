@@ -8,6 +8,7 @@ app.controller('PublishNewAdController', ['$scope', '$location', '$window', '$ti
         }
 
         $scope.headerTitle = 'Ads - Publish New Ad';
+        $scope.selectedIndex = 2;
         $scope.publishInfo = {};
 
         utilitiesDataWorker.getAllCategories().then(function (data) {

@@ -14,7 +14,7 @@ app.filter('transformDate', function () {
         'Oct',
         'Nov',
         'Dec'
-    ]
+    ];
 
     return    function (date) {
         var milliseconds = Date.parse(date),

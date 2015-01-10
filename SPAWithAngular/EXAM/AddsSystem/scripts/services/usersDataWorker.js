@@ -13,7 +13,7 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
 
             $http.post(loginApi, loginInfo)
                 .success(function (data) {
-                    var dataObject = JSON.parse(data);
+                    var dataObject = data;
 
                     dataObject.username = loginInfo.username;
 
@@ -40,7 +40,7 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
 
             $http.post(registerApi, registerInfo)
                 .success(function (data) {
-                    var dataObject = JSON.parse(data);
+                    var dataObject = data;
 
                     dataObject.username = registerInfo.username;
 
@@ -54,13 +54,10 @@ app.factory('usersDataWorker', ['$http', '$q', 'baseServiceUrl',
             return deferred.promise;
         }
 
-        function changePassword(oldPassword, newPassword, confirmPassword) {
+        function changePassword(passwordInfo) {
             var deferred = $q.defer();
 
-            $http.delete(changePasswordApi, {
-                data: {
-                    oldPassword: oldPassword, newPassword: newPassword, confirmPassword: confirmPassword
-                },
+            $http.put(changePasswordApi, passwordInfo, {
                 headers: getAuthorizationHeader()
             })
                 .success(function (data) {

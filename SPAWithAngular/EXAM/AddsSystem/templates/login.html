@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div header-directive></div>
+<section class="left-side-section">
+    <div navigation-directive></div>
+    <div notlogged-directive></div>
+</section><section class="login-main-section">
+    <div class="result-message" ng-class="{error: hasError, success: hasSuccess}" ng-show="hasError || hasSuccess">
+        <div ng-show="hasError">
+            <p>{{errorMessage}}</p>
+        </div>
+        <div ng-show="hasSuccess">
+            <p>{{successMessage}}</p>
+        </div>
+        <div class="dismiss-message-button" ng-click="dismissError()">X</div>
+    </div>
+    <div class="form-container">
+        <h2>Login</h2>
+        <form name="loginForm">
+            <label for="username">Username:</label>
+            <input id="username" type="text" ng-required="true" ng-model="loginInfo.username">
+            <label for="password">Password:</label>
+            <input id="password" type="password" ng-required="true" ng-model="loginInfo.password">
+            <button class="normal-button" ng-class="{disabled: loginForm.$invalid}" ng-click="login(loginInfo)" ng-disabled="loginForm.$invalid">Login</button>
+        </form>
+    </div>
+</section>

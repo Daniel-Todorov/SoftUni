@@ -1,10 +1,43 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div header-directive></div>
+<section class="left-side-section">
+    <div navigation-directive></div>
+    <div notlogged-directive></div>
+</section><section class="register-main-section">
+    <div class="result-message" ng-class="{error: hasError, success: hasSuccess}" ng-show="hasError || hasSuccess">
+        <div ng-show="hasError">
+            <p ng-repeat="errorMessage in errorMessages">{{errorMessage}}</p>
+        </div>
+        <div ng-show="hasSuccess">
+            <p>{{successMessage}}</p>
+        </div>
+        <div class="dismiss-message-button" ng-click="dismissError()">X</div>
+    </div>
+    <div class="form-container">
+        <h2>User Registration</h2>
+        <form name="registerForm">
+            <div class="form-side">
+                <label for="username">Username:</label>
+                <input id="username" type="text" ng-required="true" ng-minlength="6" ng-maxlength="20" ng-pattern="/[\w_-]/" ng-model="registerInfo.username">
+                <label for="password">Password:</label>
+                <input id="password" type="password" ng-required="true" ng-minlength="6" ng-maxlength="20" ng-model="registerInfo.password">
+                <label for="name">Name:</label>
+                <input id="name" type="text" ng-required="true" ng-minlength="3" ng-maxlength="30" ng-model="registerInfo.name">
+                <label for="phone">Phone:</label>
+                <input id="phone" type="tel" ng-required="true" ng-pattern="/[\+\d][\d\s]{3,15}/" ng-model="registerInfo.phone">
+            </div><div class="form-side">
+                <label>&nbsp;</label>
+                <input id="invisible" type="text" disabled>
+                <label for="confirmPassword">Confirm password:</label>
+                <input id="confirmPassword" type="password" ng-required="true" password-match="registerInfo.password" ng-minlength="6" ng-maxlength="20" ng-model="registerInfo.confirmPassword">
+                <label for="email">Email:</label>
+                <input id="email" type="email" ng-required="true" ng-pattern="/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/" ng-model="registerInfo.email">
+                <label for="townId">Town:</label>
+                <select id="townID" ng-model="registerInfo.townId" ng-options="town.id as town.name for town in towns">
+                    <option value="">---- Town ----</option>
+                </select>
+                <!--<a href="#/login">Login here</a>-->
+            </div>
+            <button class="normal-button" ng-click="register(registerInfo)" ng-class="{disabled: registerForm.$invalid}" ng-disabled="registerForm.$invalid">Register</button>
+        </form>
+    </div>
+</section>

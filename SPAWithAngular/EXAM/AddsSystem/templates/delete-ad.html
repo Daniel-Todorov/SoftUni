@@ -1,10 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div header-directive></div>
+<section>
+    <div navigation-directive></div>
+</section>
+<section>
+    <div ng-show="hasError || hasSuccess">
+        <div ng-show="hasError">
+            <p>{{errorMessage}}</p>
+        </div>
+        <div ng-show="hasSuccess">
+            <p>{{successMessage}}</p>
+        </div>
+        <button ng-click="dismissError()">X</button>
+    </div>
+    <div>
+        <h2>Confirm Deleting Ad</h2>
 
-</body>
-</html>
+        <div>
+            <div>
+                <div>
+                    <p>{{publishInfo.title}}</p>
+                    <p>{{}}</p>
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" ng-required="true" ng-model="publishInfo.title">
+                    <label for="text">Text:</label>
+                    <input id="text" type="text" ng-required="true" ng-model="publishInfo.text">
+                </div>
+            </div>
+            <div>
+                <img ng-src="{{publishInfo.imageDataUrl}}">
+            </div>
+            <div>
+                <p>{{publishInfo.text}}</p>
+                <p><span>Category: </span><span>{{publishInfo.categoryName}}</span></p>
+                <p><span>Town: </span><span>{{publishInfo.townName}}</span></p>
+            </div>
+            <button ng-click="deleteAd()">
+                Delete
+            </button>
+            <button ng-click="cancel()">Cancel</button>
+
+        </div>
+    </div>
+</section>

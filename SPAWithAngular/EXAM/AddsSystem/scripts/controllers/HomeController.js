@@ -2,7 +2,7 @@
 
 app.controller('HomeController', ['$scope', '$location', '$window', 'usersDataWorker', 'utilitiesDataWorker',
     function ($scope, $location, $window, usersDataWorker, utilitiesDataWorker) {
-        $scope.headerTitle = 'Ads Home';
+        $scope.headerTitle = 'Ads - Home';
         $scope.selectedIndex = 0;
 
         $scope.isLogged = usersDataWorker.isLogged();

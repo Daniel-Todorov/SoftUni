@@ -1,10 +1,48 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div header-directive></div>
+<section>
+    <div navigation-directive></div>
+</section>
+<section>
+    <div ng-show="hasError || hasSuccess">
+        <div ng-show="hasError">
+            <p>{{errorMessage}}</p>
+        </div>
+        <div ng-show="hasSuccess">
+            <p>{{successMessage}}</p>
+        </div>
+        <button ng-click="dismissError()">X</button>
+    </div>
+    <div>
+        <form name="editProfileForm">
+            <h2>Edit Profile</h2>
+            <label>Name:</label>
+            <input type="text" ng-required="true" ng-minlength="3" ng-maxlength="30" ng-model="profileInfo.name">
+            <label>Email:</label>
+            <input type="email" ng-required="true" ng-pattern="/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/" ng-model="profileInfo.email">
+            <label>Phone:</label>
+            <input type="tel" ng-required="true" ng-pattern="/[\+\d][\d\s]{3,15}/" ng-model="profileInfo.phoneNumber">
+            <label>Town</label>
+            <select id="townId" ng-model="profileInfo.townId" ng-options="town.id as town.name for town in towns">
+                <option value="">-- Town --</option>
+            </select>
+            <button ng-click="editProfile(profileInfo)" ng-disabled="editProfileForm.$invalid">
+                Update
+            </button>
+            <button ng-click="cancel()">Cancel</button>
+        </form>
+        <form name="editPasswordForm">
+            <h2>Change Passsword</h2>
+            <label for="oldPassword">Old password:</label>
+            <input id="oldPassword" type="password" ng-required="true" ng-minlength="6" ng-maxlength="20" ng-model="passwordInfo.oldPassword">
+            <label for="newPassword">New password:</label>
+            <input id="newPassword" type="password" ng-required="true" ng-minlength="6" ng-maxlength="20" ng-model="passwordInfo.newPassword">
+            <label for="confirmPassword">Confirm new password:</label>
+            <input id="confirmPassword" type="password" ng-required="true" password-match="passwordInfo.newPassword" ng-minlength="6" ng-maxlength="20" ng-model="passwordInfo.confirmPassword">
+            <button ng-click="editPassword(passwordInfo)" ng-disabled="editPasswordForm.$invalid">
+                Change password
+            </button>
+            <input type="reset" value="Cancel">
+            <!--<button ng-click="cancel()">Cancel</button>-->
+        </form>
+    </div>
+</section>

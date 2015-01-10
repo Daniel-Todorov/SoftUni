@@ -1,5 +1,3 @@
-<header>
-    <h1>{{headerTitle}}</h1>
-    <span ng-show="usersDataWorker.isLogged()">{{username}}</span>
-    <a ng-show="usersDataWorker.isLogged()" ng-click="logout()">Logout</a>
+<header class="main-header">
+    <h1>{{headerTitle}}<a class="link-button" ng-show="isLogged" ng-click="logout()">Logout</a><span class="logged-user-name" ng-show="isLogged">{{username}}</span></h1>
 </header>

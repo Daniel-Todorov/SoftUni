@@ -1,36 +1,30 @@
 <div header-directive></div>
-<section>
+
+<section class="left-side-section">
     <div navigation-directive></div>
     <div notlogged-directive></div>
-</section>
-
-<section>
+</section><section class="center-side-section">
     <article ng-repeat="ad in ads">
         <header>
-            <h3>{{ad.title}}</h3>
-            <time>{{ad.date | transformDate}}</time>
+            <h3>{{ad.title}}</h3><time>{{ad.date | transformDate}}</time>
         </header>
-        <div>
+        <div class="image-container">
             <img ng-src="{{ad.imageDataUrl}}">
-        </div>
-        <div>
-            <p>{{ad.text}}</p>
-            <div>
+        </div><div class="ad-info-container">
+            <p class="text">{{ad.text}}</p>
+            <div class="labels">
                 <p>Name:</p>
                 <p>Email:</p>
                 <p>Phone:</p>
-            </div>
-            <div>
-                <p>{{ad.ownerName}}</p>
-                <p>{{ad.ownerEmail}}</p>
-                <p>{{ad.ownerPhone}}</p>
+            </div><div class="values">
+                <p class="info">{{ad.ownerName}}</p>
+                <p class="info email">{{ad.ownerEmail}}</p>
+                <p class="info">{{ad.ownerPhone}}</p>
             </div>
         </div>
     </article>
     <div paging-directive></div>
-</section>
-
-<section>
+</section><section class="right-side-section">
     <div categories-directive></div>
     <div towns-directive></div>
 </section>
